@@ -42,15 +42,15 @@
  const config = {
      fps: 10,
      qrbox: {
-         width: 280,
-         height: 120,
-         aspectRatio: 1.7777778
+         width: 220,
+         height: 110,
+         aspectRatio: 1.78
      }
  };
 
  // If you want to prefer back camera
  html5QrCode.start({
-     facingMode: "environment"
+     facingMode: "environment",
  }, config, qrCodeSuccessCallback);
  //html5QrCode.start({ facingMode: "user" }, config, qrCodeSuccessCallback);
 
@@ -61,9 +61,9 @@
          if (data.event === "close") {
              html5QrCode.stop();
          }
-
      });
  }
+
  </script>
 </body>
 </html>
